@@ -123,7 +123,7 @@ const makeSvgScatterPlot = (data, inConfig) => {
 };
 
 const loadFlowers = (func) => {
-    d3.csv('/flowers.tsv', (error, data) => {
+    d3.csv('./flowers.tsv', (error, data) => {
         if (error) throw error;
 
         data.forEach(d => {
